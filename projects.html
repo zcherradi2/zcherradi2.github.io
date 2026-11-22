@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zakariae Cherradi - three projects</title>
+<meta name="description" content="Three projects: a screen-aware desktop agent, an invoice extraction pipeline, and a .NET + Angular platform. With the measured numbers and links to code you can read.">
+<style>
+  :root{--ink:#101418;--body:#333c45;--muted:#69737d;--line:#e2e6ea;--accent:#1d4d6b;--glow:#0f7a8a;--card:#fbfcfd}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#fff;color:var(--body);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:820px;margin:0 auto;padding:60px 28px 96px}
+  .eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--glow);font-weight:700}
+  h1{font-size:32px;line-height:1.15;letter-spacing:-.02em;color:var(--ink);margin-top:10px;font-weight:750}
+  .lede{margin-top:14px;max-width:62ch;color:var(--body)}
+  .links{margin-top:20px;display:flex;flex-wrap:wrap;gap:10px 18px;font-size:15.5px}
+  .links a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(29,77,107,.28);padding-bottom:1px}
+  .links a:hover{border-bottom-color:var(--accent)}
+  h2{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;
+     margin:52px 0 18px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+  .proj{border:1px solid var(--line);border-radius:12px;padding:22px 24px;background:var(--card);margin-bottom:16px}
+  .proj h3{font-size:19px;color:var(--ink);font-weight:700;letter-spacing:-.01em}
+  .proj .meta{font-size:14px;color:var(--muted);margin-top:4px}
+  .proj p{margin-top:10px;font-size:15.7px}
+  .proof{margin-top:12px;font-size:15px;font-weight:650;color:var(--glow)}
+  .proj .p-links{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
+  .p-links a{font-size:14px;text-decoration:none;color:var(--accent);border:1px solid rgba(29,77,107,.25);
+             border-radius:999px;padding:5px 12px}
+  .p-links a:hover{background:#f2f6f8}
+  .repos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .repo{display:block;border:1px solid var(--line);border-radius:10px;padding:14px 16px;text-decoration:none;background:#fff}
+  .repo:hover{border-color:rgba(29,77,107,.35)}
+  .repo b{display:block;color:var(--ink);font-size:15.5px}
+  .repo span{display:block;color:var(--muted);font-size:13.8px;margin-top:3px}
+  .note{margin-top:26px;font-size:14.5px;color:var(--muted);border-left:3px solid var(--glow);padding-left:14px}
+  .cta{display:inline-block;margin-top:18px;background:var(--accent);color:#fff;text-decoration:none;
+       padding:12px 22px;border-radius:8px;font-weight:650;font-size:15.5px}
+  .cta:hover{background:#17405a}
+  footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);font-size:14.5px;color:var(--muted)}
+  footer a{color:var(--accent);text-decoration:none}
+  @media(max-width:640px){.repos{grid-template-columns:1fr}h1{font-size:26px}.wrap{padding:40px 20px 72px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="eyebrow">Three projects</div>
+<h1>Zakariae Cherradi</h1>
+<p class="lede">AI/ML engineer in Tangier. What follows is the short version: three things I built, the
+number that proves each one works, and a link to code you can read. Nothing here is a mock-up.</p>
+<div class="links">
+  <a href="mailto:zcherradi2@gmail.com">zcherradi2@gmail.com</a>
+  <a href="https://www.linkedin.com/in/zcherradi">LinkedIn</a>
+  <a href="https://github.com/zcherradi2">GitHub</a>
+  <a href="https://zcherradi2.github.io">Portfolio and services</a>
+</div>
+
+<h2>1. Computah - a desktop agent that acts on what it sees</h2>
+<div class="proj">
+  <h3>One hotkey, and the screen becomes the conversation</h3>
+  <div class="meta">C# 13, .NET 10, WPF, SQLite, xUnit - solo project, 2026</div>
+  <p>A Windows assistant: a hotkey captures the screen under the pointer, the window's UI elements and
+  the selected text, sends them to a coding agent, and streams the answer into a bubble next to the
+  cursor. The answer can act: point at a control, frame the region that is wrong, open a file at the
+  exact line, show its own edits as a diff with undo, and - with permission - drive the mouse and
+  keyboard.</p>
+  <div class="proof">48 source files, ~13,100 lines, 141 automated tests, every shell command risk-scored and logged</div>
+  <div class="p-links">
+    <a href="https://zcherradi2.github.io/assets/computah-demo.mp4">40-second demo</a>
+    <a href="https://github.com/zcherradi2">Profile and write-ups</a>
+    <a href="mailto:zcherradi2@gmail.com?subject=Computah%20walkthrough">Ask for a walkthrough</a>
+  </div>
+</div>
+
+<h2>2. DocumentAI - invoices that read themselves</h2>
+<div class="proj">
+  <h3>OCR + LLM extraction, measured, with the cost engineered out</h3>
+  <div class="meta">Python, OCR, scikit-learn, LLM - FoliaTech, 2024-2026</div>
+  <p>A pipeline that pulls header fields and line items out of French construction invoices. The
+  interesting half was not the model, it was the cost: a classifier trained on 203 annotated documents
+  decides where a language model is actually needed, so most invoices never reach it. Totals are
+  re-derived from the line items, and an invoice that does not add up is flagged instead of accepted.</p>
+  <div class="proof">0.885 field-weighted accuracy on held-out documents, about 65% fewer LLM calls per document</div>
+  <div class="p-links">
+    <a href="https://zcherradi2.github.io">Work samples on the site</a>
+    <a href="mailto:zcherradi2@gmail.com?subject=Invoice%20extraction">Ask about the pilot</a>
+  </div>
+</div>
+
+<h2>3. Real-estate platform - API and dashboard</h2>
+<div class="proj">
+  <h3>The unglamorous half of software: contracts, migrations, layers</h3>
+  <div class="meta">C#, ASP.NET Core, EF Core, Angular, TypeScript</div>
+  <p>A REST API with JWT authentication, Swagger, a CORS policy and 13 EF Core migrations across six
+  controllers - auth, properties, proposals, uploads, cities, categories - organised in repository and
+  service layers, with a typed Angular client on top.</p>
+  <div class="proof">6 controllers, 13 migrations, typed Angular services and route guards</div>
+  <div class="p-links">
+    <a href="https://github.com/zcherradi2/StoreManagement">Closest public repo (Laravel + Next.js)</a>
+    <a href="mailto:zcherradi2@gmail.com?subject=Real-estate%20platform">Ask for a walkthrough</a>
+  </div>
+</div>
+
+<h2>Code you can read right now</h2>
+<div class="repos">
+  <a class="repo" href="https://github.com/zcherradi2/StoreManagement"><b>StoreManagement</b>
+    <span>Laravel API + Next.js 15 dashboard for retail inventory</span></a>
+  <a class="repo" href="https://github.com/zcherradi2/LinodeApiManager"><b>LinodeApiManager</b>
+    <span>Flask wrapper over Linode's API v4, with a PHP panel</span></a>
+  <a class="repo" href="https://github.com/zcherradi2/personal-python-module"><b>personal-python-module</b>
+    <span>Thread pools and shared-state helpers, pip-installable</span></a>
+  <a class="repo" href="https://github.com/zcherradi2/EngDetector"><b>EngDetector</b>
+    <span>English detection from a letter-frequency table, no model</span></a>
+  <a class="repo" href="https://github.com/zcherradi2/emailBird"><b>emailBird</b>
+    <span>SMTP account, template and status manager in plain Python</span></a>
+  <a class="repo" href="https://github.com/zcherradi2/zcherradi2"><b>zcherradi2</b>
+    <span>Profile README: what I work on and what I use</span></a>
+</div>
+
+<p class="note">Two of the three projects above live in private or company repositories, so they are
+represented by their measured results and a demo rather than a link. The six repositories below are
+public, each with a README written from the code. If you want to see the private ones, ask - I will
+walk you through them.</p>
+
+<a class="cta" href="mailto:zcherradi2@gmail.com?subject=Hello%20Zakariae">Email me</a>
+
+<footer>
+  Zakariae Cherradi - Tangier, Morocco - <a href="https://zcherradi2.github.io">zcherradi2.github.io</a>
+</footer>
+
+</div>
+</body>
+</html>
