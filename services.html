@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Work with me - Zakariae Cherradi</title>
+<meta name="description" content="Three concrete offers: invoice and document extraction, web application builds, and AI agent integration. Scope, price and timeline, written down before we start.">
+<style>
+  :root{--ink:#101418;--body:#333c45;--muted:#69737d;--line:#e2e6ea;--accent:#1d4d6b;--glow:#0f7a8a;--card:#fbfcfd}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#fff;color:var(--body);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:840px;margin:0 auto;padding:60px 28px 96px}
+  .eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--glow);font-weight:700}
+  h1{font-size:33px;line-height:1.15;letter-spacing:-.02em;color:var(--ink);margin-top:10px;font-weight:750}
+  .lede{margin-top:14px;max-width:64ch}
+  .links{margin-top:20px;display:flex;flex-wrap:wrap;gap:10px 18px;font-size:15.5px}
+  .links a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(29,77,107,.28)}
+  h2{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;
+     margin:54px 0 18px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+  .offer{border:1px solid var(--line);border-radius:12px;padding:24px 26px;background:var(--card);margin-bottom:18px}
+  .offer .num{font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--glow)}
+  .offer h3{font-size:21px;color:var(--ink);font-weight:700;margin-top:6px;letter-spacing:-.01em}
+  .offer p{margin-top:10px;font-size:15.8px}
+  .offer ul{margin:12px 0 0 20px}
+  .offer li{font-size:15.5px;margin-bottom:6px}
+  .price{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);
+         display:flex;flex-wrap:wrap;gap:8px 26px;font-size:15px}
+  .price b{color:var(--ink)}
+  .price span{color:var(--muted)}
+  .steps{counter-reset:s;list-style:none}
+  .steps li{counter-increment:s;position:relative;padding-left:42px;margin-bottom:14px;font-size:16px}
+  .steps li::before{content:counter(s);position:absolute;left:0;top:0;width:26px;height:26px;border-radius:50%;
+      background:var(--accent);color:#fff;font-size:13.5px;font-weight:700;display:flex;align-items:center;justify-content:center}
+  .no{background:#fbfcfd;border-left:3px solid #b5915f;padding:16px 18px;font-size:15.4px}
+  .no b{color:var(--ink)}
+  .cta{display:inline-block;margin-top:22px;background:var(--accent);color:#fff;text-decoration:none;
+       padding:13px 24px;border-radius:8px;font-weight:650;font-size:16px}
+  .cta:hover{background:#17405a}
+  footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);font-size:14.5px;color:var(--muted)}
+  footer a{color:var(--accent);text-decoration:none}
+  @media(max-width:640px){h1{font-size:27px}.wrap{padding:40px 20px 72px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="eyebrow">Work with me</div>
+<h1>Three things I build, with the price written down</h1>
+<p class="lede">I am a software engineer in Tangier. I take on small, well-defined jobs where I can
+measure the result: a document that reads itself, an application that replaces a spreadsheet, or an
+agent that does the clicking. Every price below is fixed and public, so nobody has to ask.</p>
+<div class="links">
+  <a href="mailto:zcherradi2@gmail.com">zcherradi2@gmail.com</a>
+  <a href="tel:+212772829812">+212 772 829 812</a>
+  <a href="projects.html">Three projects</a>
+  <a href="https://www.linkedin.com/in/zcherradi">LinkedIn</a>
+</div>
+
+<h2>1. Invoice and document extraction</h2>
+<div class="offer">
+  <div class="num">PILOT - 2 WEEKS</div>
+  <h3>Your invoices, read without a person retyping them</h3>
+  <p>You send 30 of your real supplier documents. I build the extractor, run it, and hand you a report
+  that says what the accuracy actually is on your files - before you commit to anything bigger.</p>
+  <ul>
+    <li>Fields extracted to CSV or JSON: supplier, ICE/IF, invoice number, dates, line items, VAT, totals.</li>
+    <li>A confidence score on every field, and the totals recomputed from the line items so a document
+    that does not add up is flagged instead of accepted.</li>
+    <li>Source code and a one-page accuracy report are yours at the end.</li>
+  </ul>
+  <div class="price">
+    <b>15,000 MAD fixed</b><span>50% to start, 50% on delivery</span>
+    <span>2 weeks from receiving the documents</span>
+    <span>Optional: 4,000 MAD/month for changes and support</span>
+  </div>
+</div>
+
+<h2>2. A web application that replaces a spreadsheet</h2>
+<div class="offer">
+  <div class="num">BUILD - SCOPED PER PROJECT</div>
+  <h3>API, database and dashboard, built to be maintained</h3>
+  <p>Most small businesses do not need a platform. They need one application that holds their records,
+  their rules and a screen that a non-technical person can use without training.</p>
+  <ul>
+    <li>ASP.NET Core or Laravel API, SQL Server / MySQL, Angular or React front end.</li>
+    <li>Roles and permissions, migrations, and a deployment you can repeat.</li>
+    <li>Examples already built: a real-estate platform (6 controllers, 13 migrations, JWT auth) and a
+    retail inventory app (Laravel API + Next.js dashboard).</li>
+  </ul>
+  <div class="price">
+    <b>Quoted after a one-hour scoping call</b>
+    <span>typically 3-6 weeks</span>
+    <span>fixed price, 40% to start</span>
+  </div>
+</div>
+
+<h2>3. AI agent integration, with the guard rails</h2>
+<div class="offer">
+  <div class="num">PILOT - 2 WEEKS</div>
+  <h3>One repetitive workflow, automated on a real machine</h3>
+  <p>An agent that operates a Windows workstation or your internal tools: pulling data from a supplier
+  portal, filling the same form fifty times, running a monthly report. The interesting part is not the
+  agent, it is the safety: every action logged, every risky step confirmed.</p>
+  <ul>
+    <li>One automated flow, on one machine, with a run log and a clear failure mode.</li>
+    <li>Every shell command risk-scored before it runs; destructive steps gated behind confirmation.</li>
+    <li>Built on the same architecture as Computah: 13,100 lines, 141 automated tests, in production use.</li>
+  </ul>
+  <div class="price">
+    <b>4,000 MAD fixed</b><span>or 350 MAD/hour</span>
+    <span>2 weeks, up to 10 working days</span>
+    <span>nothing to pay to approve the scope</span>
+  </div>
+</div>
+
+<h2>How it starts</h2>
+<ol class="steps">
+  <li><b>One message.</b> Tell me what the task costs you today: how many documents, how many minutes
+  each, who does it.</li>
+  <li><b>A 20-minute call.</b> I say whether it is worth automating, and what the number would be. If it
+  is not worth it, I say that too - that answer is free.</li>
+  <li><b>A written scope, then work.</b> One page with exactly what gets built, what does not, the price
+  and the date. Nothing starts before you sign that page.</li>
+</ol>
+
+<h2>What I do not do</h2>
+<p class="no"><b>No retainer without a scope</b>, no open-ended "support" hours, no project where the
+success criteria are a feeling. <b>No claims about your data before measuring it</b> - I quote the
+accuracy I measured on my own corpus and promise nothing about yours until the pilot report says so.
+And <b>no crawling around anyone's access controls</b>: if the workflow needs a login, it needs yours,
+done properly.</p>
+
+<a class="cta" href="mailto:zcherradi2@gmail.com?subject=Work%20with%20me">Email me</a>
+
+<footer>
+  Zakariae Cherradi - Tangier, Morocco - <a href="index.html">home</a> -
+  <a href="projects.html">projects</a> - <a href="https://github.com/zcherradi2">GitHub</a>
+</footer>
+
+</div>
+</body>
+</html>
