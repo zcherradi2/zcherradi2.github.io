@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zakariae Cherradi - AI / ML engineer, Tangier</title>
+<meta name="description" content="AI and machine-learning engineer in Tangier, Morocco. Document AI, LLM agents, .NET and Angular systems. Open to remote work and relocation.">
+<style>
+  :root{
+    --ink:#101418; --body:#333c45; --muted:#69737d; --line:#e2e6ea;
+    --accent:#1d4d6b; --glow:#0f7a8a; --bg:#ffffff; --card:#fbfcfd;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--bg); color:var(--body);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    font-size:17px; line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:64px 28px 96px}
+  header{border-bottom:1px solid var(--line);padding-bottom:34px}
+  .avatar{
+    width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--glow));
+    display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:22px;letter-spacing:.02em;
+  }
+  h1{font-size:34px;line-height:1.15;letter-spacing:-.02em;color:var(--ink);margin-top:22px;font-weight:750}
+  .tag{margin-top:10px;font-size:19px;color:var(--accent);font-weight:600}
+  .lede{margin-top:16px;font-size:18px;color:var(--body);max-width:60ch}
+  .links{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px 18px;font-size:15.5px}
+  .links a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(29,77,107,.28);padding-bottom:1px}
+  .links a:hover{border-bottom-color:var(--accent)}
+  h2{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+     font-weight:700;margin:56px 0 20px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+  .item{margin-bottom:30px}
+  .item h3{font-size:19px;color:var(--ink);font-weight:700;letter-spacing:-.01em}
+  .item .meta{font-size:14px;color:var(--muted);margin-top:3px}
+  .item p{margin-top:9px;max-width:62ch}
+  .item .proof{margin-top:8px;font-size:15px;color:var(--accent);font-weight:600}
+  ul{margin:10px 0 0 18px}
+  li{margin-bottom:7px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px 20px 18px}
+  .card h3{font-size:16.5px;color:var(--ink);margin-bottom:7px}
+  .card p{font-size:15px;color:var(--body)}
+  .card .price{display:block;margin-top:12px;font-size:14px;color:var(--glow);font-weight:700}
+  .skills{display:flex;flex-wrap:wrap;gap:7px;margin-top:6px}
+  .chip{font-size:13.5px;background:#f2f5f7;border:1px solid var(--line);color:var(--body);
+        border-radius:999px;padding:4px 11px}
+  footer{margin-top:64px;padding-top:26px;border-top:1px solid var(--line);font-size:15px;color:var(--muted)}
+  footer a{color:var(--accent);text-decoration:none}
+  .cta{display:inline-block;margin-top:14px;background:var(--accent);color:#fff;text-decoration:none;
+       padding:11px 20px;border-radius:8px;font-weight:650;font-size:15.5px}
+  .cta:hover{background:#17405a}
+  @media(max-width:640px){.grid{grid-template-columns:1fr}h1{font-size:28px}.wrap{padding:44px 20px 72px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="avatar">ZC</div>
+  <h1>Zakariae Cherradi</h1>
+  <div class="tag">AI / ML software engineer &middot; Tangier, Morocco</div>
+  <p class="lede">I build the model and the software around it: Python and PyTorch for the machine learning,
+  C#/.NET and Angular for the systems it has to live in. Three years in production, most of it spent turning
+  messy documents and screens into something a business can use.</p>
+  <div class="links">
+    <a href="mailto:zcherradi2@gmail.com">zcherradi2@gmail.com</a>
+    <a href="https://www.linkedin.com/in/zcherradi">LinkedIn</a>
+    <a href="https://github.com/zcherradi2">GitHub</a>
+    <a href="tel:+212772829812">+212 772 829 812</a>
+  </div>
+</header>
+
+<h2>Selected work</h2>
+
+<div class="item">
+  <h3>Computah &mdash; a screen-aware desktop agent</h3>
+  <div class="meta">C# 13, .NET 10, WPF, SQLite, xUnit &middot; solo, 2026</div>
+  <p>One hotkey captures the screen under your cursor and sends it to an LLM agent. The answer does not just
+  talk: it points at the control you need, frames the region that is wrong, opens a file at the exact line,
+  and &mdash; with permission &mdash; moves the mouse and types. Local speech-to-text, phone control over Telegram,
+  and every shell command risk-scored and logged.</p>
+  <div class="proof">48 source files &middot; ~13,100 lines &middot; 141 automated tests</div>
+</div>
+
+<div class="item">
+  <h3>DocumentAI &mdash; French construction invoices, read automatically</h3>
+  <div class="meta">Python, OCR, LLM, scikit-learn &middot; FoliaTech, 2024&ndash;2026</div>
+  <p>An OCR plus LLM pipeline that extracts header fields and line items from invoices that were never meant
+  to be machine-readable. The cost problem mattered more than the model: a classifier trained on 203 annotated
+  documents decides where an LLM is actually needed, so most documents never reach it.</p>
+  <div class="proof">0.885 field-weighted accuracy on held-out documents &middot; ~65% fewer LLM calls per document</div>
+</div>
+
+<div class="item">
+  <h3>Real-estate platform &mdash; API and dashboard</h3>
+  <div class="meta">C#, ASP.NET Core, EF Core, Angular, TypeScript</div>
+  <p>REST API with JWT authentication, Swagger, CORS and 13 EF Core migrations across six controllers
+  (auth, properties, proposals, uploads, cities, categories), in repository and service layers, with a typed
+  Angular client on top.</p>
+</div>
+
+<div class="item">
+  <h3>Trading policy learned from scratch</h3>
+  <div class="meta">Python, NumPy, PyTorch</div>
+  <p>A buy/sell/hold policy written as a three-layer network in plain NumPy, then in PyTorch, trained for
+  250 generations of evolutionary search on XAUUSD minute data, with a paper-trading harness and
+  per-generation checkpoints.</p>
+</div>
+
+<h2>What I can build for you</h2>
+
+<div class="grid">
+  <div class="card">
+    <h3>Documents that read themselves</h3>
+    <p>Invoices, delivery notes, statements, scanned forms: extraction that returns structured fields with a
+    measured accuracy, not a demo that works on one PDF.</p>
+    <span class="price">From a 2-week pilot</span>
+  </div>
+  <div class="card">
+    <h3>Internal tools and automation</h3>
+    <p>The boring software that saves hours a week: browser automation, report generation, dashboards over
+    your existing database, label and barcode printing.</p>
+    <span class="price">Fixed scope, fixed price</span>
+  </div>
+  <div class="card">
+    <h3>LLM features that hold up</h3>
+    <p>Adding an assistant to your product or your team's workflow with evaluation, cost control and a
+    fallback path when the model is wrong.</p>
+    <span class="price">Prototype in 1&ndash;2 weeks</span>
+  </div>
+  <div class="card">
+    <h3>.NET / Angular systems</h3>
+    <p>APIs, ERP modules and dashboards built to be maintained: typed contracts, migrations, tests, and
+    deployments you can repeat.</p>
+    <span class="price">Full-time or contract</span>
+  </div>
+</div>
+
+<h2>Tools</h2>
+<div class="skills">
+  <span class="chip">Python</span><span class="chip">PyTorch</span><span class="chip">scikit-learn</span>
+  <span class="chip">pandas</span><span class="chip">Transformers</span><span class="chip">PEFT / LoRA</span>
+  <span class="chip">OCR (docTR)</span><span class="chip">LLM integration</span>
+  <span class="chip">C#</span><span class="chip">.NET</span><span class="chip">ASP.NET Core</span>
+  <span class="chip">Entity Framework</span><span class="chip">Angular</span><span class="chip">TypeScript</span>
+  <span class="chip">SQL Server</span><span class="chip">SQLite</span><span class="chip">Docker</span>
+  <span class="chip">CI/CD</span><span class="chip">Git</span><span class="chip">Linux</span>
+  <span class="chip">Playwright</span>
+</div>
+
+<h2>Hiring or need something built?</h2>
+<p>Open to AI/ML engineering roles in Morocco, remote work with European or North American teams, and
+relocation to Canada. Arabic native, English professional, French intermediate.</p>
+<a class="cta" href="mailto:zcherradi2@gmail.com?subject=Hello%20Zakariae">Email me</a>
+
+<footer>
+  Zakariae Cherradi &middot; Tangier, Morocco &middot;
+  <a href="https://github.com/zcherradi2">github.com/zcherradi2</a>
+</footer>
+
+</div>
+</body>
+</html>
